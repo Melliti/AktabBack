@@ -5,6 +5,7 @@ import { MailModule } from './mail/mail.module';
 import { MailGenerateModule } from './mail/generate/mailGenerate.module';
 import { SupabaseModule } from './supabase/supabase.module';
 import { ConfigModule } from '@nestjs/config';
+import { MailHistoryModule } from './mail/history/mailHistory.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { ConfigModule } from '@nestjs/config';
     }),
     MailModule,
     MailGenerateModule,
+    MailHistoryModule,
     SupabaseModule
   ],
   controllers: [AppController],
